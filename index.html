@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Vue Television</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="tv-container">
+          <div v-if="tvIsOn" >
+            <img :src="channels[position]" src="images/waterfall-nature.gif" alt=" picture of tv on" />
+          </div>
+          <div v-else >
+            <img src="images/tv-off.png" alt=" picture of tv off" />
+          </div>
+
+        </div>
+        
+        <div class="btnContainer bg-dark text-light">
+          <button @click="switchTv" class="">
+          <img src="/images/switch.jpg" >
+        </button>
+        <button @click="next">NEXT</button>
+        <button @click="prev">PREV</button>
+        </div>
+      </div>
+    </div>
+    Designed by
+    <a href="https://gabrielekodo-portfolio-site.netlify.app/">
+      Gabriel Ekodo</a
+    >
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

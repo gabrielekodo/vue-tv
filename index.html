@@ -16,21 +16,24 @@
     <div id="app">
       <div class="container">
         <div class="tv-container">
-          <div v-if="tvIsOn" >
-            <img :src="channels[position]" src="images/waterfall-nature.gif" alt=" picture of tv on" />
+          <div v-if="tvIsOn">
+            <img
+              :src="channels[position]"
+              src="images/waterfall-nature.gif"
+              alt=" picture of tv on"
+            />
           </div>
-          <div v-else >
+          <div v-else>
             <img src="images/tv-off.png" alt=" picture of tv off" />
           </div>
-
         </div>
-        
+
         <div class="btnContainer bg-dark text-light">
           <button @click="switchTv" class="">
-          <img src="/images/switch.jpg" >
-        </button>
-        <button @click="next">NEXT</button>
-        <button @click="prev">PREV</button>
+            <img src="images/switch.jpg" />
+          </button>
+          <button @click="next">NEXT</button>
+          <button @click="prev">PREV</button>
         </div>
       </div>
     </div>

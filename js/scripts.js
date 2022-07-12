@@ -2,9 +2,9 @@ const app=Vue.createApp({
 data(){
     return {
       channels: [
-        '/images/themask.gif',
-        '/images/scooby-doo.gif',
-        '/images/waterfall-nature.gif',
+        'images/themask.gif',
+        'images/scooby-doo.gif',
+        'images/waterfall-nature.gif',
     ],
       tvIsOn: false,
       position:0
